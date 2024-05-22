@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   <head>
+
+    <head>
+    <title>Ellington Properties Dubai</title>
+    <!-- Your CSS and other head elements go here -->
+        <!-- Metas -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="Ellington Properties Dubai" content="Ellingotn Projects | Premium Developers | Dubai Properties"/>
+        <meta name="Ellington Real Estate" content="Ellingotn Projects | Premium Developers | Dubai Properties"/>
+        <meta name="Ellington Dubai" content="Ellington Dubai | Best Properties | Premium Realtors"/>
+        <!-- Title  -->
+        <title>Ellington Properties</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="/img/e1.png"/>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700,800,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Plugins -->
+        <link rel="stylesheet" href="/css/plugins.css"/>
+        <!-- Core Style Css -->
+        <link rel="stylesheet" href="/css/style.css"/>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "-qHCIhAQ1kI35Eb5x",
+      });
+   })();
+</script>
+
+    </head>
+    <body class="position-r">
+
+           <script>
+    function SendMail(event) {
+        event.preventDefault(); // Prevent form submission and page reload
+        var params = {
+            name_lead: document.getElementById("name_lead").value,
+            email_lead: document.getElementById("email_lead").value,
+            contact_lead: document.getElementById("contact_lead").value,
+            message_lead: document.getElementById("message_lead").value,
+
+            from_name: document.getElementById("from_name").value,
+            email_id1: document.getElementById("email_id1").value,
+            email_id: document.getElementById("email_id").value,
+            message: document.getElementById("message").value,
+            contact: document.getElementById("contact").value
+        };
+        emailjs.send("service_bl8r4l4", "template_15wqbyp", params)
+            .then(function(res) {
+                alert("Success! " + res.status);
+                // Close the modal after email is sent
+                document.getElementById('popup-box').style.display = 'none';
+            })
+            .catch(function(error) {
+                alert("Error sending email: " + error);
+            });
+    }
+</script>
+          <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.getElementById('popup-box').style.display = 'block';
+            }, 5000); // Adjust the delay (in milliseconds) as needed
+        });
+
+        function closePopup() {
+            document.getElementById('popup-box').style.display = 'none';
+        }
+
+        function subscribe() {
+            var email = document.getElementById('email').value;
+            // Send email subscription logic here
+            // For demonstration, let's just log the email
+            console.log('Subscribed with email: ' + email);
+            closePopup(); // Close the popup after subscription
+        }
+    </script>
+
+    <script> 
+    function closePopup(event) {
+        event.preventDefault(); // Prevent default action (e.g., form submission)
+        document.getElementById('popup-box').style.display = 'none';
+    }
+    </script>
+    <script>
+    function openModal() {
+        document.getElementById('popup-box').style.display = 'block';
+    }
+</script>
+
+<div id="popup-box" class="popup">
+    <div class="popup-content">
+        <section class="h-screen">
+            <div class="container1">
+                <div class="left-column">
+                    <img src="/img/slid/cvr.jpg" alt="Sample image" />
+                </div>
+                <div class="right-column">
+                    <form id="signup-form">
+                        <div class="form-group1">               
+                            <input class="ibox" id="name_lead" type="text" name="name_lead" placeholder="Enter Your Name" required="required">
+                        </div>
+                        <div class="form-group1">             
+                            <input class="ibox" id="email_lead" type="email" name="email_lead" placeholder="Your Email Address" required="required">
+                        </div>
+                        <div class="form-group1">
+                            <input class="ibox" id="contact_lead" type="tel" name="contact_lead" placeholder="Your Contact Number" required="required">
+                        </div>
+                        <div class="form-group1">
+                            <input class="ibox" id="message_lead" type="text" name="message_lead" placeholder="Type Your Query Here " required="required">
+                        </div>
+                        <button onclick="SendMail(event)" class="ibuton" type="button">Submit</button>
+                    </form>
+                    <span class="close" onclick="closePopup(event)">&times;</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- <div id="popup-box" class="popup">
+    <div class="popup-content">
+        <div class="left-section">
+            <img src="/img/elogo.png" alt="Logo" class="logo">
+        </div>
+        <div class="right-section">
+            <form id="signup-form">
+                <div class="form-group">               
+                    <input id="name_lead" type="text" name="name_lead" placeholder="Enter Name" required="required">
+                </div>
+                <div class="form-group">             
+                    <input id="email_lead" type="email" name="email_lead" placeholder="Enter Email" required="required">
+                </div>
+                <div class="form-group">
+                    <input id="contact_lead" type="tel" name="contact_lead" placeholder="Enter Contact" required="required">
+                </div>
+                <div class="form-group">
+                    <input id="message_lead" type="text" name="message_lead" placeholder="Enter Message" required="required">
+                </div>
+                <button onclick="SendMail(event)" type="button">Submit</button>
+            </form>
+            <span class="close" onclick="closePopup(event)">&times;</span>
+        </div>
+    </div>
+</div> -->
+
+        <!-- ==================== Start Loading ==================== -->
+        <div id="preloader"></div>
+        <!-- ==================== End Loading ==================== -->
+        <!-- ==================== Start progress-scroll-button ==================== -->
+        <div class="progress-wrap cursor-pointer">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+            </svg>
+        </div>
+        <!-- ==================== End progress-scroll-button ==================== -->
+        <!-- ==================== Start cursor ==================== -->
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div>
+        <!-- ==================== End cursor ==================== -->
+        <!-- ==================== Start Navbar ==================== -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo -->
+                <a class="logo" href="#">
+                    <img src="/img/elogowhite.png" alt="logo" loading="lazy">
+                </a>
+        
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Add your navbar items here -->
+                </div>
+            </div>
+        </nav>
+        
+        <!-- ==================== End Navbar ==================== -->
+        <!-- ==================== Start Slider ==================== -->
+        <header class="slider slider-prlx fixed-slider text-center">
+            <div class="swiper-container parallax-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-img valign" style="background-image: url('/img/slid/s1a.jpg');" data-overlay-dark="6" loading="lazy">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 col-md-9">
+                                        <div class="caption center">
+                                            <h1>Embrace <br>Luxury</h1>
+                                            <p>Experience the pinnacle of luxury living in Dubai. Explore our breathtaking residences in Dubai's most sought-after locations.</p>
+                                            <a href="#0" class="btn-curve btn-lit mt-30" onclick="openModal()" rel="preload">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-img valign" style="background-image: url('/img/slid/s2a.jpg');" data-overlay-dark="6" loading="lazy">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 col-md-9">
+                                        <div class="caption center">
+                                            <h1>Elevate <br>Lifestyle</h1>
+                                            <p>Elevate your lifestyle amidst breathtaking architecture and exquisite amenities. Discover unparalleled luxury.</p>
+                                            <a href="#0" class="btn-curve btn-lit mt-30" onclick="openModal()" rel="preload">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-img valign" style="background-image: url('/img/slid/s3a.jpg');"loading="lazy" data-overlay-dark="6" >
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 col-md-9">
+                                        <div class="caption center">
+                                            <h1>Crafting Dreams</h1>
+                                            <p>We're more than just developers – we're dream crafters and legacy builders. Discover how we're shaping the skyline and creating enduring landmarks.</p>
+                                            <a href="#0" class="btn-curve btn-lit mt-30" onclick="openModal()"rel="preload">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider Controls -->
+                <div class="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="swiper-pagination top botm custom-font"></div>
+            </div>
+        </header>
+        
+        <!-- ==================== End Slider ==================== -->
+        <div class="main-content">
+            <!-- ==================== Start about ==================== -->
+            <div class="about section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="img-mons">
+                                <div class="row">
+                                    <div class="col-md-5 cmd-padding valign">
+                                        <div class="img1 wow imago" data-wow-delay=".5s">
+                                            <img src="/img/intro/a1a.jpg" alt="" loading="lazy">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 cmd-padding">
+                                        <div class="img2 wow imago" data-wow-delay=".3s">
+                                            <img src="/img/intro/a4.jpg" alt="" loading="lazy">
+                                        </div>
+                                        <div class="img3 wow imago" data-wow-delay=".8s">
+                                            <img src="/img/intro/a2.jpg" alt="" loading="lazy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 offset-lg-1 valign">
+
+                            <div class="content">
+                                <div class="sub-title">
+                                    <h6>About Us</h6>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <h3 class="main-title wow" data-splitting>
+                                   Ellington Properties: <br>Crafting Exceptional Living   
+                                </h3>
+                                <p class="wow txt" data-splitting>Ellington Properties isn't just another real estate developer in Dubai. Since 2014, we've been pushing boundaries as Dubai's leading design-focused developer.
+
+We believe in creating more than just residences. We craft communities that inspire and elevate high-quality living.  Every project reflects our commitment to artistry and impeccable architecture.
+We transcend them, ensuring your investment remains a source of pride for generations to come.</p>
+                                <div class="ftbox mt-30">
+                                    <ul>
+                                        <li class="wow fadeIn" data-wow-delay=".3s">
+                                            <span class="icon pe-7s-diamond"></span>
+                                            <h6 class="custom-font">
+                                                Luxury <br>Redefined
+                                            </h6>
+                                            <div class="dots">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </li>
+                                        <li class="space wow fadeIn" data-wow-delay=".5s">
+                                            <span class="icon pe-7s-sun"></span>
+                                            <h6 class="custom-font">
+                                                Modern <br>Living
+                                            </h6>
+                                            <div class="dots">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </li>
+                                        <li class="wow fadeIn" data-wow-delay=".8s">
+                                            <span class="icon pe-7s-medal"></span>
+                                            <h6 class="custom-font">
+                                                Innovative <br>Ideas
+                                            </h6>
+                                            <div class="dots">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ==================== End about ==================== -->
+            <!-- ==================== Start Services ==================== -->
+            
+            <section class="services section-padding sub-bg">
+                <div class="container">
+                    <div class="sec-head custom-font text-center">
+                        <h6 class="wow fadeIn" data-wow-delay=".5s">Ellington Properties Dubai</h6>
+                        <h3 class="wow" data-splitting>Why Us?</h3>
+                        <span class="tbg">Services</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="item md-mb50 wow fadeInUp" data-wow-delay=".5s">
+                                <span class="icon pe-7s-star"></span>
+                                <h6>Top Brokerage</h6>
+                                <p>With our unmatched market knowledge and innovative strategies, we consistently lead the industry, ensuring optimal outcomes.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="item md-mb50 wow fadeInUp" data-wow-delay=".3s">
+                                <span class="icon pe-7s-stopwatch"></span>
+                                <h6>Years of Expertise</h6>
+                                <p>With decades of collective experience, our seasoned team brings unparalleled insights and wisdom to the table, empowering you to make informed decisions .</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="item wow fadeInUp" data-wow-delay=".8s">
+                                <span class="icon pe-7s-diamond"></span>
+                                <h6>Luxurious Projects</h6>
+                                <p> From exclusive high-rise developments to sprawling estates, our portfolio of luxurious projects sets the standard for sophisticated living.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==================== End Services ==================== -->
+            <!-- ==================== Start Works ==================== -->
+            <section class="portfolio section-padding pb-70">
+                <div class="container">
+                    <div class="sec-head custom-font">
+                        <h6 class="wow fadeIn" data-wow-delay=".5s">Portfolio</h6>
+                        <h3 class="wow" data-splitting>Our Projects</h3>
+                        <span class="tbg text-right">Portfolio</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <!-- filter links -->
+                        <div class="filtering col-12">
+                            <div class="filter wow fadeIn" data-wow-delay=".5s">
+                                <span data-filter='*' class="active">All</span>
+                                <span data-filter='.brand'>Claydon House</span>
+                                <span data-filter='.web'>Mercer House</span>
+                                <span data-filter='.graphic'>Arbor Views</span>
+                            </div>
+                        </div>
+                        <!-- gallery -->
+                        <div class="gallery full-width">
+                            <!-- gallery item -->
+                            <div class="col-md-6 items brand lg-mr wow fadeInUp" data-wow-delay=".4s">
+                                <div class="item-img">
+                                    <span id="open-modal" onclick="openModal()" class="imago wow" loading="lazy">
+                                        <img src="../img/portfolio/mas1/clay2.jpg" alt="image">
+                                        <div class="item-img-overlay"></div>
+                                    </span>
+                                </div>
+                                <div class="cont">
+                                    <span class="tags">
+                                        <a href="#0" rel="preload">Nad Al Sheba 1</a>
+                                        , <a href="#0" rel="preload">Dubai</a>
+                                    </span>
+                                    <h6>Claydon House by Ellington</h6>
+                                </div>
+                            </div>
+                            <!-- gallery item -->
+                            <div class="col-md-6 items brand wow fadeInUp" data-wow-delay=".4s">
+                                <div class="item-img">
+                                     <span id="open-modal" onclick="openModal()" class="imago wow">
+                                        <img src="../img/portfolio/mas1/clay3.jpg" alt="image" loading="lazy">
+                                        <div class="item-img-overlay"></div>
+                                    </a>
+                                </div>
+                                <div class="cont">
+                                    <span class="tags">
+                                        <a href="#0">Nad Al Sheba 1</a>
+                                        , <a href="#0">Dubai</a>
+                                    </span>
+                                    <h6>Claydon House by Ellington</h6>
+                                </div>
+                            </div>
+                            <!-- gallery item -->
+                            <div class="col-md-6 items web wow fadeInUp" data-wow-delay=".4s">
+                                <div class="item-img">
+                                      <span id="open-modal" onclick="openModal()" class="imago wow">
+                                        <img src="../img/portfolio/mas1/mercer.jpg" alt="image" loading="lazy">
+                                        <div class="item-img-overlay"></div>
+                                    </a>
+                                </div>
+                                <div class="cont">
+                                    <span class="tags">
+                                        <a href="#0">JLT</a>
+                                        , <a href="#0">Dubai</a>
+                                    </span>
+                                    <h6>Mercer House by Ellington</h6>
+                                </div>
+                            </div>
+                            <!-- gallery item -->
+                            <div class="col-md-6 items web wow fadeInUp" data-wow-delay=".4s">
+                                <div class="item-img">
+                                      <span id="open-modal" onclick="openModal()" class="imago wow">
+                                        <img src="../img/portfolio/mas1/mercer2.jpg" alt="image" loading="lazy">
+                                        <div class="item-img-overlay"></div>
+                                    </a>
+                                </div>
+                                <div class="cont">
+                                    <span class="tags">
+                                        <a href="#0">JLT</a>
+                                        , <a href="#0">Dubai</a>
+                                    </span>
+                                    <h6>Mercer House by Ellington</h6>
+                                </div>
+                            </div>
+                            <!-- gallery item -->
+                            <div class="col-md-6 items graphic wow fadeInUp" data-wow-delay=".4s">
+                                <div class="item-img">
+                                     <span id="open-modal" onclick="openModal()" class="imago wow">
+                                        <img src="../img/portfolio/mas1/arbor.jpg" alt="image" loading="lazy">
+                                        <div class="item-img-overlay"></div>
+                                    </a>
+                                </div>
+                                <div class="cont">
+                                    <span class="tags">
+                                        <a href="#0">Al Barsha South</a>
+                                        , <a href="#0">Dubai</a>
+                                    </span>
+                                    <h6>Arbor View</h6>
+                                </div>
+                            </div>
+                            <!-- gallery item -->
+                            <div class="col-md-6 items graphic wow fadeInUp" data-wow-delay=".4s">
+                                <div class="item-img">
+                                      <span id="open-modal" onclick="openModal()" class="imago wow">
+                                        <img src="../img/portfolio/mas1/arbor1.jpg" alt="image" loading="lazy">
+                                        <div class="item-img-overlay"></div>
+                                    </a>
+                                </div>
+                                <div class="cont">
+                                    <span class="tags">
+                                        <a href="#0">Al Barsha South</a>
+                                        , <a href="#0">Dubai</a>
+                                    </span>
+                                    <h6>Arbor View</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==================== End Works ==================== -->
+            <!-- ==================== Start testimonials ==================== -->
+            <section class="blog-grid section-padding sub-bg">
+                <div class="container">
+                    <div class="sec-head custom-font text-center">
+                        <h6 class="wow fadeIn" data-wow-delay=".5s">Latest News</h6>
+                        <h3 class="wow" data-splitting>Our Blogs.</h3>
+                        <span class="tbg">Blogs</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="item list md-mb50 wow fadeInUp" data-wow-delay=".3s">
+                                <div class="img">
+                                    <img src="../img/blog/1a.jpg" alt="" loading="lazy">
+                                </div>
+                                <div class="cont">
+                                    <a href="#0" class="date custom-font">
+                                        <span>
+                                            <i>06</i>
+                                            January
+                                        </span>
+                                    </a>
+                                    <div class="info custom-font">
+                                        <a href="#0" class="author">
+                                            <span>by / Consultant</span>
+                                        </a>
+                                        <a href="#0" class="tag">
+                                            <span>Ellington</span>
+                                        </a>
+                                    </div>
+                                    <h6>
+                                        <a href="#0">Dutco and Ellington Properties introduce Art Bay in Al Jaddaf, Dubai.</a>
+                                    </h6>
+                                    <div class="btn-more custom-font">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="item list md-mb50 wow fadeInUp" data-wow-delay=".5s">
+                                <div class="img">
+                                    <img src="../img/blog/2a.jpg" alt="" loading="lazy">
+                                </div>
+                                <div class="cont">
+                                    <a href="#0" class="date custom-font">
+                                        <span>
+                                            <i>01</i>
+                                            March
+                                        </span>
+                                    </a>
+                                    <div class="info custom-font">
+                                        <a href="#0" class="author">
+                                            <span>by / Consultant</span>
+                                        </a>
+                                        <a href="#0" class="tag">
+                                            <span>Ellington</span>
+                                        </a>
+                                    </div>
+                                    <h6>
+                                        <a href="#0">Ellington Properties receives five prestigious awards at the 2023 International Property Awards.</a>
+                                    </h6>
+                                    <div class="btn-more custom-font">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="item list wow fadeInUp" data-wow-delay=".8s">
+                                <div class="img">
+                                    <img src="../img/blog/3a.jpg" alt="" loading="lazy">
+                                </div>
+                                <div class="cont">
+                                    <a href="#0" class="date custom-font">
+                                        <span>
+                                            <i>03</i>
+                                            February
+                                        </span>
+                                    </a>
+                                    <div class="info custom-font">
+                                        <a href="#0" class="author">
+                                            <span>by / Consultant</span>
+                                        </a>
+                                        <a href="#0" class="tag">
+                                            <span>Ellington</span>
+                                        </a>
+                                    </div>
+                                    <h6>
+                                        <a href="#0">Dutco and Ellington Properties reveal a fresh residential project, One River Point, under the Dutco Ellington brand.</a>
+                                    </h6>
+                                    <div class="btn-more custom-font">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ==================== End Blog ==================== -->
+             
+            <!-- ==================== Start Contact ==================== -->
+
+          <section class="contact-sec section-padding">
+                <div class="container">
+                    <div class="sec-head custom-font text-center">
+                        <h6 class="wow fadeIn" data-wow-delay=".5s">Get In Touch</h6>
+                        <h3 class="wow" data-splitting>Contact Us.</h3>
+                        <span class="tbg">Contact</span>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="form wow fadeInUp" data-wow-delay=".5s">
+                                    <div class="messages"></div>
+                                    <div class="controls">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <input id="from_name" type="text" name="name" placeholder="Name" required="required">
+                                                </div>
+                                                 <div class="form-group">
+                                                    <input id="contact" type="tel" name="contact" placeholder="Contact" required="required">
+                                                </div>
+                                                 <div class="form-group">
+                                                    <input id="email_id1" type="email" name="email_id1" placeholder="Enter Email" required="required">
+                                                </div>
+                                            </div>
+                                         
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <textarea id="message" name="message" placeholder="Message" rows="4" required="required"></textarea>
+                                                </div>
+                                            </div>
+                                            <div data-netlify-recaptcha="true"></div>
+                                            <div class="col-12">
+                                                <div class="text-center">
+                                                    <button type="submit" onclick="SendMail(event)" class="simple-btn custom-font cursor-pointer">
+                                                        <span>Send</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- </form> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==================== End Contact ==================== -->
+       
+            <!-- ==================== Start Footer ==================== -->
+            <footer class="footer-half sub-bg section-padding pb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="cont">
+                                <div class="logo">
+                                    <a href="#0">
+                                        <img src="/img/elogowhite.png" alt="" loading="lazy">
+                                    </a>
+                                </div>
+                                <div class="con-info custom-font">
+                               
+                                </div>
+                                <div class="social-icon">
+                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 offset-lg-2">
+                            <div class="subscribe mb-50">
+                                <h6 class="custom-font stit simple-btn">Newsletter</h6>
+                                <p>Sign up for subscribe our newsletter!</p>
+
+                                <section>
+                                    <div class="form-group custom-font">   
+                                        <input id="email_id" type="email" name="email" placeholder="Email" required="required">
+                                        <button type="submit" onclick="SendMail(event)" class="cursor-pointer">Subscribe</button>
+                                    </div>
+                                </section>
+                            </div>
+                       
+                        </div>
+                    </div>
+                    <div class="copyrights text-center">
+                        <p>
+                            © 2024, Ellington Properties Dubai. All Rights Reserved.</a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+            <!-- ==================== End Footer ==================== -->
+        </div>
+        <!-- jQuery -->
+        <script src="../js/jquery-3.0.0.min.js"></script>
+        <script src="../js/jquery-migrate-3.0.0.min.js"></script>
+        <!-- plugins -->
+        <script src="../js/plugins.js"></script>
+        <!-- custom scripts -->
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
